@@ -1,0 +1,5 @@
+date "+%Y-%m-%d"
+date "+%d/%m/%y"
+date "+%A %d de %B de %Y"
+date "+%H:%M:%S"
+date "+%H:%M"
