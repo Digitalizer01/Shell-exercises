@@ -1,5 +1,9 @@
 # Shell Script Exercises
 
+## Description
+
+The exercises cover topics such as displaying the date and time in different formats, generating random numbers, performing basic arithmetic operations, using escape sequences, displaying a menu of options, searching for a word in a file, and appending data to a file. Each exercise includes a brief description of the script and the commands used.
+
 ## Exercise 1
 
 This script uses the `date` command to display the current date and time in different formats. The `+` option is used to specify the format of the output.
