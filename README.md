@@ -54,3 +54,7 @@ The script changes directory to `/`, then uses the `-c` option of the grep comma
 ## Exercise 7
 
 This script uses a while loop and a case statement to repeatedly prompt the user to enter a word until they enter ":q". For each word entered (except ":q"), it prompts them to enter a number as well. It then appends both values separated by ":" to a file called "fichero.txt".
+
+## Exercise 8
+
+This shell script creates a two-dimensional array (matrix) with 10 rows and 10 columns. It then populates the matrix with random numbers between 0 and 9 using the `shuf` command. The script then displays the elements of the matrix in various ways: all elements at once, by position, by row, by column, and in a grid format. Finally, it displays the total number of elements in the matrix.
