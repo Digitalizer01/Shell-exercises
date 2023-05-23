@@ -1,8 +1,8 @@
-echo "Introduzca el valor de N: "
-read N
-
-echo "Con repetición:"
-shuf -r -i 0-9 -n${N-1}
-
-echo "Sin repetición:"
-shuf -i 0-9 -n${N-1}
+if [ $# == 2 ]
+then 
+    echo "Suma: " $(($1+$2))
+    echo "Resta: " $(($1-$2))
+    echo "Multiplicación: " $(($1*$2))
+    echo "División: " $(($1/$2))
+else echo "Cantidad incorrecta de comandos."
+fi

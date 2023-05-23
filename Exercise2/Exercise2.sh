@@ -1,5 +1,8 @@
-date "+%Y-%m-%d"
-date "+%d/%m/%y"
-date "+%A %d de %B de %Y"
-date "+%H:%M:%S"
-date "+%H:%M"
+echo "Introduzca el valor de N: "
+read N
+
+echo "Con repetición:"
+shuf -r -i 0-9 -n${N-1}
+
+echo "Sin repetición:"
+shuf -i 0-9 -n${N-1}

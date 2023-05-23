@@ -1,19 +1,14 @@
-echo -n "Introduce un directorio: "
-read DIRECTORIO
-echo -n "Introduce el nombre de un fichero: "
-read FICHERO
-echo -n "Introduce una palabra: "
-read PALABRA
-
-linea=$DIRECTORIO$FICHERO
-
-cd /
-
-resultado=$(grep -c "$PALABRA" "$linea")
-
-if [ $resultado -eq 0 ]
-then
-    echo "La palabra no existe en el fichero."
-else
-    echo "La palabra existe en el fichero."
-fi
+correcto=1
+while [ $correcto -eq 1 ]
+do
+    echo -n "Introduzca una palabra: "
+    read palabra
+    
+    case $palabra in
+        ":q") correcto=0;;
+        *) echo -n "Introduzca un número: "
+            read numero
+            echo "$palabra"":""$numero" >> fichero.txt
+            correcto=1;;
+    esac
+done
